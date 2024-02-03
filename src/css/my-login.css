@@ -1,0 +1,115 @@
+body {
+  height: 100%;
+}
+
+body.my-login-page {
+  background-color: #f7f9fb;
+  font-size: 14px;
+  color: #212121; /* Text color for light mode */
+}
+
+.my-login-page .brand {
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.my-login-page .brand img {
+  width: 100%;
+}
+
+.my-login-page .card-wrapper {
+  width: 400px;
+}
+
+.my-login-page .card {
+  border-color: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.my-login-page .card.fat {
+  padding: 10px;
+}
+
+.my-login-page .card .card-title {
+  margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+  border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+  width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+  padding: 12px 10px;
+}
+
+.my-login-page .footer {
+  margin: 40px 0;
+  color: #888;
+  text-align: center;
+}
+
+/* Dark mode styles */
+
+body.dark-mode {
+  background-color: #212121;
+  color: #000207; /* Text color for dark mode */
+}
+
+body.dark-mode a {
+  color: #a6781c;
+}
+
+body.dark-mode .card {
+  background-color: #2e2d2d;
+  color: #e0e0e0;
+  border-color: transparent;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .btn-primary {
+  background-color: #606060;
+  border-color: #e0e0e0;
+  color: #212121; /* Text color for light mode */
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #bdbdbd;
+  border-color: #bdbdbd;
+  color: #212121; /* Text color for light mode */
+}
+
+body.dark-mode .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #e0e0e0;
+}
+
+body.dark-mode .footer {
+  background-color: #212121;
+  color: #e0e0e0;
+}
+
+@media screen and (max-width: 425px) {
+  .my-login-page .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .my-login-page .card.fat {
+    padding: 0;
+  }
+
+  .my-login-page .card.fat .card-body {
+    padding: 15px;
+  }
+}
