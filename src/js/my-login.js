@@ -70,20 +70,26 @@ $(".my-login-validation").submit(function () {
 });
 
 // Dark mode functionality
-document
-  .getElementById("dark-mode-toggle")
-  .addEventListener("click", function () {
-    document.body.classList.toggle("dark-mode");
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("dark-mode", "true");
-    } else {
-      localStorage.setItem("dark-mode", "false");
-    }
-  });
+const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+darkModeToggle.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("dark-mode", "true");
+    darkModeToggle.textContent = "Light Mode";
+    darkModeToggle.classList.add("light-mode");
+  } else {
+    localStorage.setItem("dark-mode", "false");
+    darkModeToggle.textContent = "Dark Mode";
+    darkModeToggle.classList.remove("light-mode");
+  }
+});
 
 // Check if dark mode is enabled in local storage
 if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("dark-mode");
+  darkModeToggle.textContent = "Light Mode";
+  darkModeToggle.classList.add("light-mode");
 }
 
 // Sample user data

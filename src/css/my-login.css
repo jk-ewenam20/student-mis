@@ -8,6 +8,12 @@ body.my-login-page {
   color: #212121; /* Text color for light mode */
 }
 
+.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
 .my-login-page .brand {
   width: 90px;
   height: 90px;
