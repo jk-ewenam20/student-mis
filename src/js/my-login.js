@@ -85,3 +85,45 @@ document
 if (localStorage.getItem("dark-mode") === "true") {
   document.body.classList.add("dark-mode");
 }
+
+// Sample user data
+const sampleUsers = [
+  {
+    email: "arthur@engineering.com",
+    password: "redbull",
+  },
+  {
+    email: "someone@engineering.com",
+    password: "bumblebee",
+  },
+];
+
+// Store sample users in local storage
+localStorage.setItem("sampleUsers", JSON.stringify(sampleUsers));
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.querySelector(".my-login-validation");
+  const emailInput = document.querySelector("#email");
+  const passwordInput = document.querySelector("#password");
+
+  // Load sample users from local storage
+  const sampleUsers = JSON.parse(localStorage.getItem("sampleUsers"));
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    // Check if the entered email and password match any sample user
+    const isValidUser = sampleUsers.some(
+      (user) => user.email === email && user.password === password
+    );
+    if (isValidUser) {
+      window.location.href = "dashboard.html";
+    } else {
+      // Show an error message
+      alert("Invalid email or password");
+    }
+  });
+});
