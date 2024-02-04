@@ -4,18 +4,6 @@
     {
       "src": "/(.*)",
       "dest": "login.html"
-    },
-    {
-      "src": "^/(?!login\\.html|images/|js/).*",
-      "dest": "login.html"
-    },
-    {
-      "src": "/images/(.*)",
-      "dest": "/images/$1"
-    },
-    {
-      "src": "/js/(.*)",
-      "dest": "/js/$1"
     }
   ]
 }
