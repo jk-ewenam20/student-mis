@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ScholarWatch &dash; Student Dashboard</title>
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo" title="ScholarWatch">
+        <img src="img/logo.jpg" alt="ScholarWatch Logo" />
+        <h2>S<span class="danger">w</span>.</h2>
+      </div>
+      <div class="navbar">
+        <a href="index.html" class="active" title="Home">
+          <span class="material-icons-sharp">home</span>
+          <h3>Home</h3>
+        </a>
+        <a href="timetable.html" onclick="timeTableAll()" title="Time Table">
+          <span class="material-icons-sharp">today</span>
+          <h3>Time Table</h3>
+        </a>
+        <a href="exam.html" title="Examination">
+          <span class="material-icons-sharp">grid_view</span>
+          <h3>Examination</h3>
+        </a>
+        <a href="courseregistration.html" title="Course Registration">
+          <span class="material-symbols-outlined">file_open</span>
+          <h3>Course Registration</h3>
+        </a>
+        <a href="login.html" onclick="return confirmLogout()" title="Logout">
+          <span class="material-icons-sharp">logout</span>
+          <h3>Logout</h3>
+        </a>
+      </div>
+      <div id="profile-btn" title="Profile">
+        <span class="material-icons-sharp">person</span>
+      </div>
+      <div class="theme-toggler" title="Toggle Theme">
+        <span class="material-icons-sharp active">light_mode</span>
+        <span class="material-icons-sharp">dark_mode</span>
+      </div>
+    </header>
+
+    <div class="container">
+      <aside>
+        <div class="profile">
+          <div class="top">
+            <div class="profile-photo">
+              <img src="img/profile-1.jpg" alt="" />
+            </div>
+            <div class="info">
+              <p>Hey, <b>Magoo</b></p>
+              <small class="text-muted">11001100</small>
+            </div>
+          </div>
+          <div class="about">
+            <h5>Programme</h5>
+            <p>BSc Computer Engineering</p>
+            <h5>Year</h5>
+            <p>200</p>
+            <h5>DOB</h5>
+            <p>21-Feb-2003</p>
+            <h5>Contact</h5>
+            <p>+233593081566</p>
+            <h5>Email</h5>
+            <p>haqq@st.ug.edu.gh</p>
+            <h5>Address</h5>
+            <p>Haatso, Accra</p>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Courses Activity</h1>
+        <div class="subjects">
+          <div class="eg">
+            <span class="material-icons-sharp">architecture</span>
+            <h3>Engineering Graphics</h3>
+            <h2>12/14</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>86%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="mth">
+            <span class="material-icons-sharp">functions</span>
+            <h3>Linear Algebra</h3>
+            <h2>27/29</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>93%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="cs">
+            <span class="material-icons-sharp">computer</span>
+            <h3>C++ Programming</h3>
+            <h2>27/30</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>81%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="cg">
+            <span class="material-icons-sharp">dns</span>
+            <h3>Database System Design</h3>
+            <h2>24/25</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>96%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="net">
+            <span class="material-icons-sharp">router</span>
+            <h3>Digital Circuit</h3>
+            <h2>25/27</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>92%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="net">
+            <span class="material-icons-sharp">router</span>
+            <h3>Digital Circuit</h3>
+            <h2>25/27</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>92%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+          <div class="net">
+            <span class="material-icons-sharp">router</span>
+            <h3>Digital Circuit</h3>
+            <h2>25/27</h2>
+            <div class="progress">
+              <svg><circle cx="38" cy="38" r="36"></circle></svg>
+              <div class="number"><p>92%</p></div>
+            </div>
+            <small class="text-muted">Last 24 Hours</small>
+          </div>
+        </div>
+      </main>
+
+      <div class="right">
+        <div class="announcements">
+          <h2>Announcements</h2>
+          <div class="updates">
+            <div class="message">
+              <p>
+                <b>Academic</b> K. Broni uploads new YouTube programming
+                tutorials.
+              </p>
+              <small class="text-muted">2 Minutes Ago</small>
+            </div>
+            <div class="message">
+              <p>
+                <b>Co-curricular</b> Global internship oportunity by World Bank
+              </p>
+              <small class="text-muted">10 Minutes Ago</small>
+            </div>
+            <div class="message">
+              <p><b>Examination</b> Exam Timetable shared on STS</p>
+              <small class="text-muted">Yesterday</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="leaves">
+          <h2>Lecturers Highlight</h2>
+          <div class="teacher">
+            <div class="profile-photo">
+              <img src="img/profile-2.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Dr Godfrey Mills</h3>
+              <small class="text-muted">The Lord is in control</small>
+            </div>
+          </div>
+          <div class="teacher">
+            <div class="profile-photo">
+              <img src="img/profile-3.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Dr Margaret Richardson</h3>
+              <small class="text-muted">Yet another day to learn C++</small>
+            </div>
+          </div>
+          <div class="teacher">
+            <div class="profile-photo">
+              <img src="img/profile-4.jpg" alt="" />
+            </div>
+            <div class="info">
+              <h3>Mr Kenneth Broni</h3>
+              <small class="text-muted">Learn Programming...</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/timeTable.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

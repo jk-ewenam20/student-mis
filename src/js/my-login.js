@@ -95,12 +95,12 @@ if (localStorage.getItem("dark-mode") === "true") {
 // Sample user data
 const sampleUsers = [
   {
-    email: "arthur@engineering.com",
-    password: "redbull",
+    email: "haqq@st.ug.edu.gh",
+    password: "kitkat",
   },
   {
-    email: "someone@engineering.com",
-    password: "bumblebee",
+    email: "john@st.ug.edu.gh",
+    password: "melee",
   },
 ];
 
@@ -126,10 +126,21 @@ document.addEventListener("DOMContentLoaded", function () {
       (user) => user.email === email && user.password === password
     );
     if (isValidUser) {
-      window.location.href = "dashboard.html";
+      window.location.href = "index.html";
     } else {
       // Show an error message
       alert("Invalid email or password");
     }
+  });
+});
+
+// Create Account Bounceback
+document.addEventListener("DOMContentLoaded", function () {
+  const createAccountLink = document.getElementById("createAccountLink");
+  createAccountLink.addEventListener("click", function (event) {
+    event.preventDefault();
+    alert(
+      "Please go to your department office to register and verify your account."
+    );
   });
 });

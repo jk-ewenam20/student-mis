@@ -8,7 +8,7 @@
       content="A responsive MIS web application for managing student records and academic performance."
     />
     <title>ScholarWatch &mdash; Create Account</title>
-    <link rel="shortcut icon" href="/img/logo.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -36,6 +36,7 @@
                       type="text"
                       class="form-control"
                       name="name"
+                      placeholder="Full Name"
                       required
                       autofocus
                     />
@@ -49,6 +50,7 @@
                       type="email"
                       class="form-control"
                       name="email"
+                      placeholder="student@st.ug.edu.gh"
                       required
                     />
                     <div class="invalid-feedback">Your email is invalid</div>
@@ -87,12 +89,16 @@
                   </div>
 
                   <div class="form-group m-0">
-                    <button type="submit" class="btn btn-primary btn-block">
-                      Register
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-block"
+                      id="createAccountLink"
+                    >
+                      <b>Register</b>
                     </button>
                   </div>
                   <div class="mt-4 text-center">
-                    Already have an account? <a href="index.html">Login</a>
+                    Already have an account? <a href="login.html">Login</a>
                   </div>
                 </form>
               </div>

@@ -34,8 +34,10 @@ body.my-login-page {
 }
 
 .my-login-page .card {
+  z-index: 999;
+  border-radius: 1.2rem;
   border-color: transparent;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2rem 3rem var(rgba(132, 139, 200, 0.18));
 }
 
 .my-login-page .card.fat {
@@ -67,8 +69,8 @@ body.my-login-page {
 /* Dark mode styles */
 
 body.dark-mode {
-  background-color: #212121;
-  color: #000207; /* Text color for dark mode */
+  background-color: #181a1e;
+  color: #edeffd;
 }
 
 body.dark-mode a {
@@ -76,31 +78,31 @@ body.dark-mode a {
 }
 
 body.dark-mode .card {
-  background-color: #2e2d2d;
-  color: #e0e0e0;
+  background-color: rgba(132, 139, 200, 0.18);
+  color: #edeffd;
   border-color: transparent;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
 }
 
 body.dark-mode .btn-primary {
-  background-color: #606060;
-  border-color: #e0e0e0;
-  color: #212121; /* Text color for light mode */
+  background-color: #181a1e;
+  border-color: #a3bdcc;
+  color: #a3bdcc; /* Text color for light mode */
 }
 
 body.dark-mode .btn-primary:hover {
-  background-color: #bdbdbd;
-  border-color: #bdbdbd;
-  color: #212121; /* Text color for light mode */
+  background-color: #edeffd;
+  border-color: #edeffd;
+  color: #181a1e; /* Text color for light mode */
 }
 
 body.dark-mode .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #e0e0e0;
+  background-color: #edeffd;
 }
 
 body.dark-mode .footer {
-  background-color: #212121;
-  color: #e0e0e0;
+  background-color: #181a1e;
+  color: #edeffd;
 }
 
 @media screen and (max-width: 425px) {
