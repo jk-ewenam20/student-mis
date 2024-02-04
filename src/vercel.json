@@ -1,12 +1,10 @@
 {
   "version": 2,
+  "public": true,
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "login.html"
-    },
     { "src": "/js/(.*)", "dest": "/js/$1" },
     { "src": "/images/(.*)", "dest": "/img/$1" },
+    { "src": "^/$", "dest": "/login.html" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
