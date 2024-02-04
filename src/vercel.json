@@ -4,6 +4,9 @@
     {
       "src": "/(.*)",
       "dest": "login.html"
-    }
+    },
+    { "src": "/js/(.*)", "dest": "/js/$1" },
+    { "src": "/images/(.*)", "dest": "/img/$1" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
